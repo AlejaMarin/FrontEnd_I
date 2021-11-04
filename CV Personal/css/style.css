@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kufam&display=swap');
+
+header{
+    background-image: url(../img/fondo-3.svg);
+    background-attachment: fixed;
+    background-position: center bottom;
+}
+
+.foto-perfil{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 210px; 
+}
+
+.ico{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1{
+    background-color: gray;
+    color: black;
+    font-family: 'Trebuchet MS', sans-serif;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+h2{
+    background-color: silver;
+    color: black;
+    font-family: 'Trebuchet MS', sans-serif;
+    letter-spacing: 3px;
+}
+
+main{
+    font-family:'Alegreya', serif;
+}
+
+.datos-personales{
+    margin-top: 8%;
+    line-height: 25px;
+}
+
+.formacion-academica, .experiencia-laboral{
+    margin-top: 2%;
+}
+
+.datos-personales .texto-resaltado{
+    font-style: italic;
+    font-weight: bold;
+}
+
+.formacion-academica .texto-resaltado, .experiencia-laboral .texto-resaltado{
+    font-weight: bold;
+}
+
+footer{
+    background-color:grey;
+    color: black;
+    font-style: normal;
+    font-weight: bold;
+    margin-top: 10%;
+    text-align: center;
+}
+
+p{
+    height: 50px;;
+}
+
+.icono{
+    padding-left: 15px;
+    padding-top: 10px;
+    height: 35px;
+    width: 35px;
+}
+
+.about-me{
+    margin-top: 5%;
+    height: 450px;
+    font-family: 'Kufam', sans-serif;
+}
+
+.info{
+    background-image: url("../img/fondo-1.svg");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}

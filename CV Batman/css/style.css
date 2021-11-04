@@ -1,0 +1,62 @@
+header{
+    background-color: #E6E6E6;
+}
+
+.foto-perfil{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1{
+    background-color: #C4C4C4;
+    color: #005677;
+    font-family: "Times New Roman";
+    letter-spacing: 10px;
+    text-align: center;
+}
+
+h2{
+    background-color: #C4C4C4;
+    color: #005677;
+    font-family: "Times New Roman";
+    letter-spacing: 5px;
+}
+
+.datos-personales{
+    margin-top: 10%;
+    line-height: 25px;
+}
+
+.formacion-academica, .experiencia-laboral{
+    margin-top: 2%;
+}
+
+.datos-personales .texto-resaltado{
+    font-style: italic;
+    font-weight: bold;
+}
+
+.formacion-academica .texto-resaltado, .experiencia-laboral .texto-resaltado{
+    font-weight: bold;
+}
+
+footer{
+    background-color: #005677;
+    color: white;
+    font-style: normal;
+    font-weight: bold;
+    margin-top: 10%;
+    text-align: center;
+}
+
+
+.icono1{
+    position: absolute;
+    left: 772px;
+}
+
+.icono2{
+    position: absolute;
+    left: 818px;
+}
