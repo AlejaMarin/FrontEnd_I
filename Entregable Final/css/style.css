@@ -24,15 +24,258 @@ body{
 }
 
 /* header */
+
 header{
     display: flex;
-    
+    justify-content: space-around;
+    margin-top: 75.13px;
+}
+
+header .navbutton{
+    display: flex;
+    display: none;
+}
+
+header .navbar .categories{
+    display: flex;
+    list-style: none;
+    gap: 28px;
+    white-space: nowrap;
 }
 
 /* main */
 
+main{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* firstSection */
+
+main .firstSection {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+main .firstSection .graphImage{
+    width: 100vw;
+}
+
+main .firstSection .text span {
+    color: var(--secondaryColor);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+main .firstSection .text p {
+    color: var(--neutralColor3);
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+
+/* button (firstSection and thirdSection) */
+
+main .firstSection .text .buttonGS, main .thirdSection .buttonGS, header .navbutton .buttonGS {
+    background-color: var(--primaryColor);
+    border: none;
+    border-radius: 50px;
+    padding: 12.5px 30.5px;
+    color: white;
+}
+
+/* secondSection */
+
+main .secondSection{
+    display: flex;
+    flex-direction: column;
+}
+main .secondSection p{
+    color: var(--neutralColor3);
+}
+main .secondSection .firstBox {
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 50px;
+}
+main .secondSection .firstBox span {
+    color: var(--secondaryColor);
+    font-size: 36px;
+    font-weight: bold ;
+}
+
+main .secondSection .secondBox .segments{
+    display: flex;
+    align-items: baseline;
+}
+
+main .secondSection .secondBox .segments span {
+    background-color: var(--primaryColor); 
+    color: white;
+    line-height: 23px;
+    margin-bottom: 18px;
+    /* margin-left: 23px;
+    margin-right: 23px; */
+    padding: 10px 25px;
+    border-radius: 30px;
+}
+
+main .secondSection .secondBox .segments h3{
+    background-color: #FFF0EC;
+    font-size: 16px;
+    white-space: nowrap;
+    color: var(--secondaryColor);
+    padding: 10px 25px;
+    /* padding-left: 23px; */
+}
+
+main .secondSection .secondBox p {
+    text-align: left;
+    margin-bottom: 33.5px;
+}
+
+/* thirdSection */
+
+main .thirdSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 90px;
+}
+
+main .thirdSection h3 {
+    color: var(--secondaryColor);
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+main .thirdSection .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 35px;
+}
+
+main .thirdSection span {
+    color: var(--secondaryColor);
+    font-weight: bold;
+    margin-top: 21px;
+    margin-bottom: 21px;
+}
+
+main .thirdSection p {
+    color: var(--neutralColor3);
+}
+
+main .thirdSection img {
+    width: 70px;
+}
+
 /* footer */
+footer .orangeFooter{
+    align-items: center;
+    background-color: var(--primaryColor);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+footer .orangeFooter div{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 48px;
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
+
+footer .orangeFooter .buttonGS_whiteButton{
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    border-style: none;
+    border-radius: 50px;
+    color: var(--primaryColor);
+    padding: 12.5px 30.5px;
+    margin-bottom: 64px;
+}
+
+footer .blackFooter{
+    background-color: var(--neutralColor4);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .blackFooter .emailForm{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+footer .blackFooter .emailForm input{
+    background: #FFFFFF;
+    border-radius: 50px;
+    border-style: none;
+    padding: 12.5px 48px 12.5px 10px;
+    margin-right: 9px;
+}
+
+footer .blackFooter .emailForm button{
+    background-color: var(--primaryColor);
+    border-radius: 50px;
+    border-style: none;
+    color: #FFFFFF;
+    padding: 11.5px 22.5px;
+}
+
+footer .blackFooter .listsBox{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+footer .blackFooter .firstList{
+    padding-left: 30px;
+}
+
+footer .blackFooter .firstList li, .secondList li{
+    list-style: none;
+    color: #FFFFFF;
+    white-space: nowrap;
+    padding-bottom: 12px;
+}
+
+footer .blackFooter .socialMedia{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 25px;
+}
+
+footer .blackFooter .logo{
+    width: 145.43px;
+    align-self: center;
+}
+
+footer .blackFooter .copyright{
+    color: var(--neutralColor3);
+    margin-top: 45px;
+    text-align: center;
+    white-space: nowrap;
+}
 
 /* responsive */
+
+@media (min-width: 376px) {
+    header .navbutton{
+        display: block;
+    }
+
+    header .hamburger{
+        display: none;
+    }
+}
 
 /* pseudoselectors */
