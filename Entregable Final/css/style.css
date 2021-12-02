@@ -6,6 +6,11 @@
     padding: 0;
 }
 
+/* html{
+    width: 100vw;
+    overflow-x: hidden;
+} */
+
 /* Typography */
 body{
     font-family: 'Be Vietnam Pro', sans-serif;
@@ -30,6 +35,11 @@ header{
     justify-content: space-around;
     align-items: center;
     margin-top: 75.13px;
+}
+
+header .navbutton  a{
+    text-decoration: none;
+    color: var(--secondaryColor) ;
 }
 
 header .navbutton{
@@ -88,6 +98,7 @@ main .firstSection .text .buttonGS, main .thirdSection .buttonGS, header .navbut
     border-radius: 50px;
     padding: 12.5px 30.5px;
     color: white;
+    transition: background-color 450ms;
 }
 
 /* secondSection */
@@ -212,6 +223,7 @@ footer .orangeFooter .buttonGS_whiteButton{
     color: var(--primaryColor);
     padding: 12.5px 30.5px;
     margin-bottom: 64px;
+    transition: color 450ms;
 }
 
 footer .blackFooter{
@@ -221,61 +233,28 @@ footer .blackFooter{
     flex-direction: column;
 }
 
-footer .blackFooter .emailForm{
+
+footer .blackFooter .firstContainer .emailForm{
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
 }
 
-footer .blackFooter .emailForm input{
+footer .blackFooter .firstContainer .emailForm input{
     background: #FFFFFF;
     border-radius: 50px;
     border-style: none;
-    padding: 12.5px 48px 12.5px 25px;
+    padding-left: 38px;
     margin-right: 9px;
 }
 
-footer .blackFooter .emailForm button{
+footer .blackFooter .firstContainer .emailForm .goButton{
     background-color: var(--primaryColor);
     border-radius: 50px;
     border-style: none;
     color: #FFFFFF;
     padding: 11.5px 28px;
-}
-
-footer .blackFooter .listsBox{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 25px;
-}
-
-footer .blackFooter .firstList{
-    padding-left: 30px;
-}
-
-footer .blackFooter .firstList li, .secondList li{
-    list-style: none;
-    color: #FFFFFF;
-    white-space: nowrap;
-    padding-bottom: 12px;
-}
-
-footer .blackFooter .firstList a, .secondList  a{
-    text-decoration: none;
-    color: white;
-}
-
-footer .blackFooter .socialMedia{
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 25px;
-}
-
-footer .blackFooter .logo{
-    fill: white;
-    height: 23.74px;
-    width: 145.43px;
-    align-self: center;
+    transition: background-color 450ms;
 }
 
 footer .blackFooter .copyright{
@@ -285,9 +264,55 @@ footer .blackFooter .copyright{
     white-space: nowrap;
 }
 
+footer .blackFooter .secondContainer .listsBox{
+    display: flex;
+    gap: 115px;
+    margin-bottom: 25px;
+    font-size: 13px;
+}
+
+footer .blackFooter .secondContainer .firstList{
+    padding-left: 30px;
+}
+
+footer .blackFooter .secondContainer .firstList li, .secondList li{
+    list-style: none;
+    color: #FFFFFF;
+    white-space: nowrap;
+    padding-bottom: 12px;
+}
+
+footer .blackFooter .secondContainer .firstList a, .secondList  a{
+    text-decoration: none;
+    color: white;
+}
+
+footer .blackFooter .thirdContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer .blackFooter .thirdContainer .socialMedia{
+    display: flex;
+    margin-bottom: 25px;
+    gap: 10vw;
+}
+
+footer .blackFooter .thirdContainer .logo{
+    height: 23.74px;
+    width: 145.43px;
+    align-self: center;
+    margin-top: 20px;
+}
+
+
 /* responsive */
 
 @media (min-width: 376px) {
+
+    main .firstSection {
+        text-align: left;
+    }
 
     header .navbutton{
         display: flex;
@@ -297,6 +322,11 @@ footer .blackFooter .copyright{
 
     header .hamburger{
         display: none;
+    }
+
+    main{
+        margin-left: 50px;
+        margin-right: 50px;
     }
 
     main .firstSection{
@@ -309,6 +339,10 @@ footer .blackFooter .copyright{
         order: -1;
         align-self: center;
         width: 439px;
+    }
+
+    main .firstSection .text span{
+    font-size: 50px;
     }
 
     main .firstSection .graphImage{
@@ -328,6 +362,120 @@ footer .blackFooter .copyright{
         text-align: left;
     }
 
+    main .secondSection .secondBox .segments{
+        background-color: transparent;
+    }
+
+    main .secondSection .secondBox p{
+        margin-left: 90px;
+    }
+
+    main .thirdSection{
+        margin-bottom: 50px;
+    }
+
+    main .thirdSection section{
+        display: flex;
+        gap: 80px;
+    }
+
+    main .thirdSection h3{
+        margin-top: 65px;
+    }
+
+    main .thirdSection .buttonGS{
+        margin-top: 50px;
+    }
+
+    /* modificacion texto y modificando el justify-content para que se separen los elementos */
+
+    footer .orangeFooter div{
+        width: 35vw;
+        text-align: left;
+    }
+
+    footer .orangeFooter {
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    /* footer .orangeFooter .buttonContainer{
+        position: relative;
+        left: 220px;
+        top: 30px;
+    } */
+
+    footer .blackFooter {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    footer .blackFooter .firstContainer {
+        order: 1;
+    }
+
+    footer .blackFooter .thirdContainer {
+        order: -1;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+
+    footer .blackFooter .thirdContainer .socialMedia{
+        gap: 1vw;
+    }
+
+    footer .blackFooter .copyright {
+        order: 2;
+        align-self: flex-end;
+    }
+
 }
 
 /* pseudoselectors */
+
+.buttonGS:hover, .buttonGS_whiteButton:hover, .goButton:hover{
+    cursor: pointer;
+}
+
+header .navbutton .buttonGS:hover{
+    background-color: rgba(242, 95, 58, 0.6);
+}
+
+header .navbutton .navbar .categories a:hover{
+    color: var(--neutralColor3);
+}
+
+main .firstSection .text .buttonGS:hover{
+    background-color: rgba(242, 95, 58, 0.6);
+}
+
+main .thirdSection .buttonGS:hover{
+    background-color: rgba(242, 95, 58, 0.6);
+}
+
+footer .orangeFooter .buttonGS_whiteButton:hover{
+    color: rgba(242, 95, 58, 0.6);
+}
+
+footer .blackFooter .firstContainer .emailForm .goButton:hover{
+    background-color: rgba(242, 95, 58, 0.7);
+}
+
+footer .blackFooter .secondContainer .listsBox .firstList a:hover{
+    color: var(--primaryColor);
+}
+
+footer .blackFooter .secondContainer .listsBox .secondList a:hover{
+    color: var(--primaryColor);
+}
+
+footer .blackFooter .thirdContainer .socialMedia img:hover{
+    cursor: pointer;
+    filter: invert(47%) sepia(79%) saturate(2438%) hue-rotate(338deg) brightness(98%) contrast(93%);
+}
+
+footer .blackFooter .firstContainer .emailForm input:focus{
+    outline: none;
+    color: firebrick;
+    box-shadow: 2px 2px 2px 1px firebrick;
+}
